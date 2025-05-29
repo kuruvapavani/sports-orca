@@ -1,8 +1,11 @@
 import React from 'react'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className='min-h-screen bg-black text-white'>App</div>
+    <div className='min-h-screen bg-black'>
+      <Home />
+    </div>
   )
 }
 
