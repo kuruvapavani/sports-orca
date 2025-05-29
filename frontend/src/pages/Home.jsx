@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MatchCard from "../components/MatchCard";
+import Navbar from "../components/Navbar";
 
 const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
@@ -43,6 +44,8 @@ const Home = () => {
   }
 
   return (
+    <div>
+    <Navbar />
     <div className="bg-gradient-to-b from-gray-900 to-black min-h-screen py-10 px-4">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-2xl sm:text-4xl lg:text-5xl text-center text-white font-extrabold mb-16">
@@ -69,6 +72,7 @@ const Home = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };
